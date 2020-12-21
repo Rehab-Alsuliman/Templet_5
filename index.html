@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <title>Test 10</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Full Page CSS -->
+    <link rel="stylesheet" href="css/fullpage.min.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div id="fullpage">
+          <div class="section">Home</div>
+          <div class="section">About</div>
+          <div class="section">Services</div>
+          <div class="section">Contact</div>
+        </div>
+      </div>
+    </div>
+    <script src="js/fullpage.min.js"></script>
+    <script>
+      new fullpage("#fullpage", {
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true,
+        navigation: true,
+        navigationTooltips: ["Home", "About", "Services", "Contact"],
+        showActiveTooltip: true,
+      });
+
+      //methods
+      fullpage_api.setAllowScrolling(false);
+    </script>
+  </body>
+</html>
